@@ -51,4 +51,4 @@ tidy_data <-
                             by = list(activity = all_data$activity, 
                                       subject = all_data$subject), mean)
 
-write.table(tidy_data, 'tidy_data')
+write.table(tidy_data, 'tidy_data', row.names = F)
