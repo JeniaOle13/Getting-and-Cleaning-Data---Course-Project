@@ -1,3 +1,5 @@
+setwd("/home/acari/Рабочий стол/ekhfbesbv/")
+
 # 1 Merges the training and the test sets to create one data set.
 ################################################################################################
 # 1.1 Read train data
@@ -46,9 +48,9 @@ all_data <- cbind(y_data, subject_data, x_data)
 #   data set with the average of each variable for each activity and each subject.
 ##############################################################################################
 
-averages_data <- 
+tidy_data <- 
     aggregate(all_data[,-(1:2)], 
                             by = list(activity = all_data$activity, 
                                       subject = all_data$subject), mean)
 
-write.table(averages_data, 'averages_data')
+write.table(tidy_data, 'tidy_data')
