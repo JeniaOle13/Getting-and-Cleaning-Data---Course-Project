@@ -1,5 +1,3 @@
-setwd("/home/acari/Рабочий стол/ekhfbesbv/")
-
 # 1 Merges the training and the test sets to create one data set.
 ################################################################################################
 # 1.1 Read train data
